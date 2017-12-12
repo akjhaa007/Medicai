@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/gradient_id_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_animation"
+    tools:context="com.snipthink.medicai.Startureg">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+                <EditText
+                    android:padding="3dp"
+                    android:hint="First Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_first"
+                    android:inputType="textCapWords"
+                    android:background="@drawable/etext_round"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp" 
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp" 
+                    android:layout_marginEnd="20dp"/>
+
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:inputType="textCapWords"
+                android:layout_below="@+id/user_first"
+                android:hint="Last Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_second"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" 
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/user_second"
+                android:hint="Email id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_email"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"/>
+
+
+
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:inputType="phone"
+                android:layout_below="@+id/user_email"
+                android:hint="Mobile No"
+                android:maxLength="14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_mob"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"  android:layout_marginStart="20dp"
+                android:layout_marginEnd="150dp" android:layout_marginRight="150dp"/>
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/user_mob"
+                android:hint="Aadhar No"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_adhar"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" 
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="150dp" 
+                android:layout_marginRight="150dp"/>
+
+
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/user_adhar"
+                android:hint="Date of Birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_date"
+                android:inputType="date"
+                android:drawableLeft="@drawable/side_nav_bar"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginRight="220dp"/>
+
+
+
+
+
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/user_date"
+                android:hint="ZIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_zip"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="7"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginRight="220dp"/>
+          <Spinner
+              android:layout_marginLeft="20dp"
+              android:id="@+id/gender_select"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="10dp"
+              android:popupBackground="@drawable/bg_animation"
+              android:layout_below="@+id/user_zip"
+              android:layout_width="match_parent"
+              android:layout_marginRight="200dp"
+              android:layout_marginEnd="200dp"
+              android:backgroundTint="@color/edittext_bg"
+              android:layout_height="wrap_content">
+
+          </Spinner>
+            <EditText
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/gender_select"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_pass"
+                android:inputType="textPassword"
+                android:background="@drawable/etext_round"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="220dp"
+                android:layout_marginRight="220dp"/>
+
+
+<Button
+    android:textColor="#098072"
+    android:text="Register"
+    android:textSize="17sp"
+    android:background="@drawable/button_round"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/register_button"
+    android:layout_below="@id/user_pass"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<TextView
+    android:textColor="#b9f2cc"
+    style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/text_Move_login"
+    android:text="I have already an account"
+    android:layout_below="@id/register_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
